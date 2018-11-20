@@ -1,0 +1,15 @@
+﻿version: '3.5'
+services:
+  spring-boot-admin:
+     image: fac/spring-boot-admin:latest
+     #le nom du container est important il sera utilisé pour s'y connecter (depuis notre appli main)
+     container_name: spring-boot-admin
+     ports:
+        - 8099:8080
+     #config du network
+     networks:
+        - "springadmin"
+         
+networks:
+    springadmin:
+        name: springadmin

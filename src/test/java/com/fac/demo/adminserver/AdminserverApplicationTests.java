@@ -1,4 +1,4 @@
-package com.pdy.fac.adminserver;
+package com.fac.demo.adminserver;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
